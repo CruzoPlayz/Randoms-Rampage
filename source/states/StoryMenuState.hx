@@ -81,7 +81,7 @@ class StoryMenuState extends MusicBeatState
 
 		#if desktop
 		// Updating Discord Rich Presence
-		DiscordClient.changePresence("In the Menus", null);
+		DiscordClient.changePresence("THE STORY", null);
 		#end
 
 		var num:Int = 0;
@@ -98,7 +98,7 @@ class StoryMenuState extends MusicBeatState
 				weekThing.targetY = num;
 				grpWeekText.add(weekThing);
 
-				weekThing.screenCenter(X);
+				weekThing.setPosition(100,500);
 				// weekThing.updateHitbox();
 
 				// Needs an offset thingie
@@ -159,14 +159,16 @@ class StoryMenuState extends MusicBeatState
 		add(bgSprite);
 		add(grpWeekCharacters);
 
-		var tracksSprite:FlxSprite = new FlxSprite(FlxG.width * 0.07, bgSprite.y + 425).loadGraphic(Paths.image('Menu_Tracks'));
+		var tracksSprite:FlxSprite = new FlxSprite(FlxG.width * 0.07, bgSprite.y + 425).loadGraphic(Paths.image('tracks'));
 		tracksSprite.antialiasing = ClientPrefs.data.antialiasing;
+		tracksSprite.setPosition(700,700);
 		add(tracksSprite);
 
 		txtTracklist = new FlxText(FlxG.width * 0.05, tracksSprite.y + 60, 0, "", 32);
 		txtTracklist.alignment = CENTER;
 		txtTracklist.font = rankText.font;
-		txtTracklist.color = 0xFFe55777;
+		txtTracklist.color = 0xff000000;
+		txtTracklist.setPosition(500,500);
 		add(txtTracklist);
 		// add(rankText);
 		add(scoreText);

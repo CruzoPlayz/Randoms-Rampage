@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="menu_story.png">
+	<!-- Created using the Spritesheet and XML generator -->
+	<!-- https://uncertainprod.github.io/FNF-Spritesheet-XML-generator-Web -->
+	<SubTexture name="story white" x="0" y="0" width="261" height="488" frameX="-68" frameY="-129" frameWidth="397" frameHeight="746"/>
+	<SubTexture name="story basic" x="261" y="0" width="4" height="4" frameX="0" frameY="0" frameWidth="397" frameHeight="746"/>
+</TextureAtlas>
